@@ -12,6 +12,3 @@ This script will create a .pot file in this directory and create or update corre
 
 IMPORTANT:
 Before launching rebuild.sh you must replace $PRODUCT variable with the name of the package you want translate.
-
-
-
