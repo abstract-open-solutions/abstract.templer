@@ -1,8 +1,7 @@
 [buildout]
 parts =
-    scripts
-    test
     instance
+    test
 
 versions = versions
 extends =
@@ -14,7 +13,7 @@ develop = .
 
 [instance]
 recipe = plone.recipe.zope2instance
-user = admin:password
+user = admin:admin
 http-address = 8080
 eggs =
     Plone
@@ -28,17 +27,6 @@ environment-vars =
 
 
 [versions]
-
-
-[scripts]
-recipe = zc.recipe.egg
-eggs =
-    zest.releaser
-    ZopeSkel
-    PasteScript
-    PasteDeploy
-    Paste
-    zopeskel.plonepolicy
 
 
 [test]
