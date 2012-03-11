@@ -1,0 +1,23 @@
+#!/Users/giorgio/sviluppo/abstract_bootstrap/bin/python2.6
+
+import sys
+sys.path[0:0] = [
+    '/Users/giorgio/.buildout/eggs/ZopeSkel-3.0a1-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/PasteScript-1.7.5-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/setuptools-0.6c12dev_r88846-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/PasteDeploy-1.5.0-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/Paste-1.7.5.1-py2.6.egg',
+    '/Users/giorgio/sviluppo/abstract_bootstrap/zopeskel.plonepolicy',
+    '/Users/giorgio/.buildout/eggs/zest.releaser-3.31-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/templer.plone-1.0a1-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/templer.zope-1.0a2-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/templer.buildout-1.0a2-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/templer.core-1.0b3-py2.6.egg',
+    '/Users/giorgio/.buildout/eggs/Cheetah-2.2.1-py2.6-macosx-10.6-x86_64.egg',
+    ]
+
+
+import zest.releaser.lasttagdiff
+
+if __name__ == '__main__':
+    zest.releaser.lasttagdiff.main()
