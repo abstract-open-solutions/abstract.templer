@@ -1,10 +1,12 @@
 #!/bin/bash
-i18ndude rebuild-pot --pot ../locales/${namespace_package}.${package}.pot --create ${namespace_package}.${package} ../
-i18ndude sync --pot ../locales/${namespace_package}.${package}.pot ../locales/*/LC_MESSAGES/${namespace_package}.${package}.po
+PRODUCT=product.name
+
+i18ndude rebuild-pot --pot ../locales/${PRODUCT}.pot --create $PRODUCT ../
+i18ndude sync --pot ../locales/${PRODUCT}.pot ../locales/*/LC_MESSAGES/${PRODUCT}.po
 
 for lang in $(find ../locales -mindepth 1 -maxdepth 1 -type d); do
     if test -d $lang/LC_MESSAGES; then
-        msgfmt -o $lang/LC_MESSAGES/${namespace_package}.${package}.mo $lang/LC_MESSAGES/${namespace_package}.${package}.po
+        msgfmt -o $lang/LC_MESSAGES/${PRODUCT}.mo $lang/LC_MESSAGES/${PRODUCT}.po
     fi
 done
 
@@ -24,3 +26,4 @@ touch ./rebuild_i18n.log
 
 find ../ -name "*pt" | xargs i18ndude find-untranslated > ./rebuild_i18n.log
 # Ok, now poedit is your friend!
+
