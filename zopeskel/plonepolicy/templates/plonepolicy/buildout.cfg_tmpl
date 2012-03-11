@@ -5,13 +5,10 @@ parts =
     instance
 
 versions = versions
-
 extends =
     http://dist.plone.org/release/4.2b2/versions.cfg
-
 find-links =
     http://dist.plone.org/thirdparty/
-
 develop = .
 
 
@@ -19,7 +16,6 @@ develop = .
 recipe = plone.recipe.zope2instance
 user = admin:password
 http-address = 8080
-
 eggs =
     Plone
     PILwoTK
@@ -27,12 +23,12 @@ eggs =
     ${namespace_package}.${package}
 zcml =
 
-
 environment-vars =
    PYTHON_EGG_CACHE /tmp/egg-cache
 
 
 [versions]
+
 
 [scripts]
 recipe = zc.recipe.egg
@@ -44,8 +40,9 @@ eggs =
     Paste
     zopeskel.plonepolicy
 
+
 [test]
 recipe = zc.recipe.testrunner
 defaults = ['--tests-pattern', '^f?tests$', '-v']
-eggs = ${namespace_package}.${package}
-
+eggs =
+    ${namespace_package}.${package} [test]
