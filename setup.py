@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='zopeskel.plonepolicy',
       version=version,
-      description="Paster templates for Plone policy product",
+      description="Zopeskel templates for Abstract development",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -22,7 +22,7 @@ setup(name='zopeskel.plonepolicy',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['zopeskel'],
+      namespace_packages=['abstract'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
@@ -37,6 +37,6 @@ setup(name='zopeskel.plonepolicy',
       entry_points="""
       # -*- Entry points: -*-
       [paste.paster_create_template]
-      plonepolicy = zopeskel.plonepolicy.plonepolicy:PlonePolicy
+      plonepolicy = abstract.zopeskel.plonepolicy:PlonePolicy
       """,
       )
