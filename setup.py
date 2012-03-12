@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='zopeskel.plonepolicy',
+setup(name='abstract.zopeskel',
       version=version,
       description="Zopeskel templates for Abstract development",
       long_description=open("README.txt").read() + "\n" +
