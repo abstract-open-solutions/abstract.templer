@@ -1,7 +1,7 @@
 import copy
 
-from zopeskel.basic_namespace import BasicNamespace
-from zopeskel.base import get_var
+from templer.core.basic_namespace import BasicNamespace
+from templer.core.base import get_var
 
 
 class PlonePolicy(BasicNamespace):
@@ -14,7 +14,7 @@ class PlonePolicy(BasicNamespace):
     get_var(vars, 'namespace_package').default = 'plone'
     get_var(vars, 'package').default = 'example'
     get_var(vars, 'description').default = 'Plone Policy Product'
-    get_var(vars, 'license_name').default = 'GPL version 2'
+    get_var(vars, 'license_name').default = 'GPL'
     get_var(vars, 'author').default = 'Abstract'
     get_var(vars, 'author_email').default = 'info@abstract.it'
     get_var(vars, 'url').default = 'http://git.abstract.it'
