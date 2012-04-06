@@ -44,6 +44,16 @@ Decomment this line to remove default versioning policies::
     >>> disable_cmfedition_versioning(site)
 
 
+More dependencies
+-----------------
+
+This package also depends on some "most wanted" add-ons, so that you don't need to remember to add them to the buildout, like:
+- collective.portletpage
+- collective.contentleadimage
+- z3c.jbot
+- collective.quickupload
+
+
 Development environment
 =======================
 Abstract policy package contains a special profile useful to create a development environment.

@@ -28,6 +28,8 @@ setup(name=${repr($project)},
           'collective.portletpage',
           'collective.contentleadimage',
           'z3c.jbot',
+          # -*- suggested requirements: -*-
+          'collective.quickupload',
           # -*- Extra requirements: -*-
       ],
       extras_require={
