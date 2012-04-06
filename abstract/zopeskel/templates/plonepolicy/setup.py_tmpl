@@ -30,6 +30,8 @@ setup(name=${repr($project)},
           'z3c.jbot',
           # -*- suggested requirements: -*-
           'collective.quickupload',
+          'collective.oembed',
+          'collective.js.oembed',
           # -*- Extra requirements: -*-
       ],
       extras_require={

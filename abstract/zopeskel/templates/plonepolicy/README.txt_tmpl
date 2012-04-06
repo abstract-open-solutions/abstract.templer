@@ -52,6 +52,8 @@ This package also depends on some "most wanted" add-ons, so that you don't need 
 - collective.contentleadimage
 - z3c.jbot
 - collective.quickupload
+- collective.oembed
+- collective.js.oembed
 
 
 Development environment
