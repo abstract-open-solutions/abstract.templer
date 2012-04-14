@@ -38,5 +38,7 @@ setup(name='abstract.zopeskel',
       # -*- Entry points: -*-
       [paste.paster_create_template]
       plonepolicy = abstract.zopeskel.plonepolicy:PlonePolicy
+      plonetheme = abstract.zopeskel.plonetheme:PloneTheme
+
       """,
       )

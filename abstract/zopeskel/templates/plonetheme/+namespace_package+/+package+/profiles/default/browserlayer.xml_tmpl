@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+ <layer name="${namespace_package}.${package}.browserlayer"
+     interface="${namespace_package}.${package}.interfaces.IThemeSpecific"
+     />
+</layers>
