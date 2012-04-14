@@ -3,5 +3,10 @@
     <dependencies>
         <dependency>profile-collective.portletpage:default</dependency>
         <dependency>profile-collective.contentleadimage:default</dependency>
+      <!--
+        <dependency>profile-collective.quickupload:default</dependency>
+        <dependency>profile-collective.oembed:default</dependency>
+        <dependency>profile-collective.js.oembed:default</dependency>
+      -->
     </dependencies>
 </metadata>

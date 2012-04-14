@@ -3,6 +3,10 @@ import os
 
 version = ${repr($version) or "0.0"}
 
+tests_requirements = [
+          'plone.app.testing',
+        ]
+
 setup(name=${repr($project)},
       version=version,
       description="${description or None}",
@@ -27,20 +31,18 @@ setup(name=${repr($project)},
           'Products.CMFCore',
           'collective.portletpage',
           'collective.contentleadimage',
-          'z3c.jbot',
           # -*- suggested requirements: -*-
           'collective.quickupload',
           'collective.oembed',
           'collective.js.oembed',
           # -*- Extra requirements: -*-
       ],
+      tests_require=tests_requirements,
       extras_require={
         'development': [
             'collective.loremipsum',
         ],
-        'test': [
-            'plone.app.testing',
-        ],
+        'test': tests_requirements,
       },
       entry_points="""
       # -*- Entry points: -*-
