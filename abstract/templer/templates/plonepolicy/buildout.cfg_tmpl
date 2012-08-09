@@ -19,6 +19,7 @@ parts +=
 recipe = zc.recipe.testrunner
 eggs =
     \${instance:eggs}
+    \${buildout:package-name} [test]
 
 defaults = ['-s', '\${buildout:package-name}']
 

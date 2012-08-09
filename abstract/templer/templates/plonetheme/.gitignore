@@ -1,3 +1,10 @@
+# Ignore buildout dirs
+eggs
+bin
+develop-eggs
+parts
+.installed.cfg
+
 # Ignore python compiled files
 *.py[co]
 # Ignore eggs

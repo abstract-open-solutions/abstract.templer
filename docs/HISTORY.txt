@@ -4,6 +4,8 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- changed plonepolicy and plonetheme package layout
+- added buildout directories and files to .gitignore
 - fixed buildout configuration in templates
 - changed plone version in templates buildout
 - renamed package to abstract.templer
