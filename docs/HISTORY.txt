@@ -4,6 +4,7 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- changed plone version in templates buildout
 - renamed package to abstract.templer
 - added plonetheme template
 - added plonepolicy template
