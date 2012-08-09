@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='abstract.zopeskel',
+setup(name='abstract.templer',
       version=version,
       description="Zopeskel templates for Abstract development",
       long_description=open("README.md").read() + "\n" +
@@ -30,15 +30,15 @@ setup(name='abstract.zopeskel',
           'PasteScript',
           'PasteDeploy',
           'Paste',
-          'ZopeSkel'
+          'ZopeSkel',
+          'templer.core',
           # -*- Extra requirements: -*-
       ],
       setup_requires=["PasteScript"],
       entry_points="""
       # -*- Entry points: -*-
       [paste.paster_create_template]
-      plonepolicy = abstract.zopeskel.plonepolicy:PlonePolicy
-      plonetheme = abstract.zopeskel.plonetheme:PloneTheme
-
+      plonepolicy = abstract.templer.plonepolicy:PlonePolicy
+      plonetheme = abstract.templer.plonetheme:PloneTheme
       """,
       )

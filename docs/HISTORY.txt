@@ -4,4 +4,7 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
-- added plonepolicy template [gborelli]
+- renamed package to abstract.templer
+- added plonetheme template
+- added plonepolicy template
+[gborelli]
