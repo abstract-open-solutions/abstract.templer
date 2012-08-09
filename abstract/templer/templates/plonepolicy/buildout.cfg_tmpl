@@ -1,36 +1,28 @@
 [buildout]
-parts =
-    instance
-    test
-
-versions = versions
 extends =
     http://svn.plone.org/svn/collective/buildout/plonetest/plone-4.x.cfg
-find-links =
-    http://dist.plone.org/thirdparty/
-develop = .
 
+package-name = ${namespace_package}.${package}
 
-[instance]
-recipe = plone.recipe.zope2instance
-user = admin:admin
-http-address = 8080
 eggs =
-    Plone
-    PILwoTK
-    elementtree
-    ${namespace_package}.${package}
-zcml =
+    Pillow
+    plone.reload
+    Products.PDBDebugMode
+    Products.PrintingMailHost
 
-environment-vars =
-   PYTHON_EGG_CACHE /tmp/egg-cache
-
-
-[versions]
+parts +=
+    test
+    omelette
 
 
 [test]
 recipe = zc.recipe.testrunner
-defaults = ['--tests-pattern', '^f?tests$', '-v']
 eggs =
-    ${namespace_package}.${package} [test]
+    \${instance:eggs}
+
+defaults = ['-s', '\${buildout:package-name}']
+
+
+[omelette]
+recipe = collective.recipe.omelette
+eggs = \${instance:eggs}
