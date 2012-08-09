@@ -6,7 +6,7 @@ version = '1.0'
 setup(name='abstract.zopeskel',
       version=version,
       description="Zopeskel templates for Abstract development",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.md").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
