@@ -10,6 +10,7 @@ class BaseTemplate(BasicNamespace):
     summary = ""
     category = "Plone Development"
     required_templates = []
+    default_required_structures = ['bootstrap', 'test_buildout', 'git', ]
 
     use_cheetah = True
     vars = copy.deepcopy(BasicNamespace.vars)

@@ -2,7 +2,9 @@
 extends =
     http://svn.plone.org/svn/collective/buildout/plonetest/plone-4.x.cfg
 
-package-name = ${namespace_package}.${package}
+parts +=
+    test
+    omelette
 
 eggs =
     Pillow
@@ -10,9 +12,16 @@ eggs =
     Products.PDBDebugMode
     Products.PrintingMailHost
 
-parts +=
-    test
-    omelette
+package-name = ${namespace_package}.${package}
+giturl = git@github.com:
+
+extensions =
+    mr.developer
+
+sources = sources
+sources-dir = extras
+auto-checkout = *
+# always-checkout = true
 
 
 [test]
@@ -27,3 +36,7 @@ defaults = ['-s', '\${buildout:package-name}']
 [omelette]
 recipe = collective.recipe.omelette
 eggs = \${instance:eggs}
+
+
+[sources]
+# package-name = git \${buildout:giturl}usr-org/package-name.git

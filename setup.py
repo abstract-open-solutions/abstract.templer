@@ -40,6 +40,10 @@ setup(name='abstract.templer',
       plonepolicy = abstract.templer.plonepolicy:PlonePolicy
       plonetheme = abstract.templer.plonetheme:PloneTheme
 
+      [templer.templer_structure]
+      test_buildout = abstract.templer.structures:TestBuildoutStructure
+      git = abstract.templer.structures:GitStructure
+
       [templer.templer_sub_template]
       defaultcontent = abstract.templer.defaultcontent:DefaultContent
       """,
