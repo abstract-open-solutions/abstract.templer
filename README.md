@@ -20,3 +20,12 @@ this template creates a plone policy package
 
 plonetheme:
 this template creates a plone theme package it depends on plone.app.theming
+
+
+Local commands
+--------------
+
+For plonepolicy template is available a local command which allow to create default content structure with collective.transmogrifier pieline
+
+usage:
+ ...

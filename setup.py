@@ -8,8 +8,6 @@ setup(name='abstract.templer',
       description="Zopeskel templates for Abstract development",
       long_description=open("README.md").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Programming Language :: Python",
         "Framework :: Plone",
@@ -28,12 +26,11 @@ setup(name='abstract.templer',
       install_requires=[
           'setuptools',
           'PasteScript',
-          'PasteDeploy',
           'Paste',
           'ZopeSkel',
           'templer.core',
           'templer.localcommands',
-          # -*- Extra requirements: -*-
+
       ],
       setup_requires=["PasteScript"],
       entry_points="""
@@ -44,6 +41,5 @@ setup(name='abstract.templer',
 
       [templer.templer_sub_template]
       defaultcontent = abstract.templer.defaultcontent:DefaultContent
-
       """,
       )
