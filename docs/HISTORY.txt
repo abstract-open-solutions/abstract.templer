@@ -4,6 +4,7 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- fixed .gitignore file in policy and theme templates
 - changed plonepolicy and plonetheme package layout
 - added buildout directories and files to .gitignore
 - fixed buildout configuration in templates
