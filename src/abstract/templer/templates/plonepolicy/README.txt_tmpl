@@ -50,10 +50,32 @@ More dependencies
 This package also depends on some "most wanted" add-ons, so that you don't need to remember to add them to the buildout, like:
 - collective.portletpage
 - collective.contentleadimage
-- z3c.jbot
 - collective.quickupload
 - collective.oembed
 - collective.js.oembed
+
+Installation
+============
+
+You can install this package with zc.buildout:
+
+    [instance]
+    eggs =
+        ${namespace_package}.${package}
+
+Before you include this package in a buildout environment you have to uncomment the right dependencies in setup.py and metadata.xml files:
+
+
+      # -*- loadcontent requirements: -*-
+      'plone.app.transmogrifier',
+      'transmogrify.dexterity',
+      # -*- suggested requirements: -*-
+      'collective.portletpage',
+      'collective.contentleadimage',
+      'collective.quickupload',
+      'collective.oembed',
+      'collective.js.oembed',
+
 
 
 Development environment
@@ -73,6 +95,4 @@ called: Abstract Policy (Development)
 
 This profile installs:
  * collective.loremipsum
-
-...
 
