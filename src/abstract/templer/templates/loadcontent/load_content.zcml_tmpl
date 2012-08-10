@@ -11,7 +11,7 @@
 
     <genericsetup:registerProfile
         name="loadcontent"
-        title="${description or None} Load content"
+        title="${namespace_package}.${package} Load content"
         directory="profiles/loadcontent"
         description="Load default content of the ${namespace_package}.${package} package"
         provides="Products.GenericSetup.interfaces.EXTENSION"
