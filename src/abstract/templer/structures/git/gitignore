@@ -4,6 +4,7 @@ bin
 develop-eggs
 parts
 .installed.cfg
+Paste*
 
 # Ignore python compiled files
 *.py[co]
