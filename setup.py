@@ -32,6 +32,7 @@ setup(name='abstract.templer',
           'Paste',
           'ZopeSkel',
           'templer.core',
+          'templer.localcommands',
           # -*- Extra requirements: -*-
       ],
       setup_requires=["PasteScript"],
@@ -40,5 +41,9 @@ setup(name='abstract.templer',
       [paste.paster_create_template]
       plonepolicy = abstract.templer.plonepolicy:PlonePolicy
       plonetheme = abstract.templer.plonetheme:PloneTheme
+
+      [templer.templer_sub_template]
+      defaultcontent = abstract.templer.defaultcontent:DefaultContent
+
       """,
       )
