@@ -1,0 +1,9 @@
+#<configure xmlns="http://namespaces.zope.org/zope"
+#           xmlns:browser="http://namespaces.zope.org/browser"
+#           i18n_domain="${namespace_package}.${package}">
+#
+#    <!-- -*- extra stuff goes here -*- -->
+
+  <include file="load_content.zcml" />
+
+#</configure>

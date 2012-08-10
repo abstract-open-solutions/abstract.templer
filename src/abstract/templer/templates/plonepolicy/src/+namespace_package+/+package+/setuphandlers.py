@@ -1,4 +1,5 @@
 from Products.CMFPlone.utils import getToolByName
+# -*- extra stuff goes here -*-
 
 
 def disable_cmfedition_versioning(portal):

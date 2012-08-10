@@ -11,8 +11,6 @@ TODO
 Riciclare IPortletPage come marker interface per differenti tipi di contenuto
 Ovvero non vincolare le portlet di portletPage ad un tipo di contenuto specifico - abstract.portletface
 
-* costruire un prototipo per la realizzazione di uno scheletro di contenuti iniziale per il sito affinché la messa in produzione sia facilitata.
-
 * togliere filtri all'advanced search form - template che riscriviamo sempre
 * produrre viste personalizzate - spesso utilizzate
 

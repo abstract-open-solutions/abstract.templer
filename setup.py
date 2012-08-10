@@ -45,6 +45,6 @@ setup(name='abstract.templer',
       git = abstract.templer.structures:GitStructure
 
       [templer.templer_sub_template]
-      defaultcontent = abstract.templer.defaultcontent:DefaultContent
+      loadcontent = abstract.templer.loadcontent:LoadContent
       """,
       )

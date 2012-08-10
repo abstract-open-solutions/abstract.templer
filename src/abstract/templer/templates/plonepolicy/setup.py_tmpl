@@ -29,13 +29,16 @@ setup(name=${repr($project)},
       zip_safe=${repr(bool($zip_safe)) or False},
       install_requires=[
           'setuptools',
-          'Products.CMFCore',
-          'collective.portletpage',
-          'collective.contentleadimage',
+          # 'Products.CMFCore',
+          # -*- loadcontent requirements: -*-
+          # 'plone.app.transmogrifier',
+          # 'transmogrify.dexterity',
           # -*- suggested requirements: -*-
-          'collective.quickupload',
-          'collective.oembed',
-          'collective.js.oembed',
+          # 'collective.portletpage',
+          # 'collective.contentleadimage',
+          # 'collective.quickupload',
+          # 'collective.oembed',
+          # 'collective.js.oembed',
           # -*- Extra requirements: -*-
       ],
       tests_require=tests_requirements,
@@ -50,4 +53,9 @@ setup(name=${repr($project)},
       [z3c.autoinclude.plugin]
       target = plone
       """,
+#if $use_localcommands
+      setup_requires=["PasteScript"],
+      paster_plugins=["templer.localcommands"],
+#end if
+
       )

@@ -4,6 +4,7 @@ Changelog
 1.0dev (unreleased)
 -------------------
 
+- added loadcontent local command to plonepolicy template
 - added git and test_buildout structures to templates
 - changed package structure
 - fixed .gitignore file in policy and theme templates
