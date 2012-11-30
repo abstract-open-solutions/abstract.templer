@@ -27,5 +27,10 @@ Local commands
 
 For plonepolicy template is available a local command which allow to create default content structure with collective.transmogrifier pieline
 
-usage:
- ...
+usage::
+
+   $ zopeskel plonepolicy test.policy
+   ...
+   $ cd test.policy/src
+   $ paster  add loadcontent
+
