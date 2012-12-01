@@ -1,2 +1,3 @@
-This directory contains all resources for plone.app.theming
-See: http://pypi.python.org/pypi/plone.app.theming
+This directory contains all static resources.
+
+NOTE: static configuration stuff like `manifest.cfg` and `rules.xml` into $buildout_dir/resources/theme

@@ -7,7 +7,7 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
 
 
-class AbstractPolicyFixture(PloneSandboxLayer):
+class Fixture(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE, )
 
     def setUpZope(self, app, configurationContext):
@@ -19,12 +19,12 @@ class AbstractPolicyFixture(PloneSandboxLayer):
         applyProfile(portal, '${namespace_package}.${package}:default')
 
 
-BASE_FIXTURE = AbstractPolicyFixture()
+BASE_FIXTURE = Fixture()
 
 INTEGRATION_TESTING = IntegrationTesting(
                                     bases=(BASE_FIXTURE, ),
-                                    name="AbstractPolicyFixture:Integration")
+                                    name="MyThemeFixture:Integration")
 
 FUNCTIONAL_TESTING = FunctionalTesting(
                                     bases=(BASE_FIXTURE, ),
-                                    name="AbstractPolicyFixture:Functional")
+                                    name="MyThemeFixture:Functional")
