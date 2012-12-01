@@ -6,7 +6,7 @@ version = '1.0'
 setup(name='abstract.templer',
       version=version,
       description="Zopeskel templates for Abstract development",
-      long_description=open("README.md").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
         "Programming Language :: Python",

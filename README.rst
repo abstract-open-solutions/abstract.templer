@@ -5,7 +5,7 @@ This package contains some `ZopeSkel`__ templates useful internal development at
 
 .. image:: http://www.abstract.it/++theme++abstract.theme/theme/static/theme/img/online/logo.png
    :alt: Abstract Website
-   :target: http://wwww.abstract.it
+   :target: http://www.abstract.it
 
 Available Templates
 -------------------
