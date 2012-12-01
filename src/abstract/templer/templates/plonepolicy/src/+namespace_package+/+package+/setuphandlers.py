@@ -13,7 +13,7 @@ def limit_history_versions(portal):
     """Limit number of history items per content
     """
     portal_purgepolicy = getToolByName(portal, 'portal_purgepolicy')
-    portal_purgepolicy.maxNumberOfVersionsToKeep = 2
+    portal_purgepolicy.maxNumberOfVersionsToKeep = 5
 
 
 def import_various(context):
