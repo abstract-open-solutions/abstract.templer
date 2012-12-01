@@ -3,7 +3,7 @@ Introduction
 
 This package contains some `ZopeSkel`__ templates useful internal development at
 
-.. image:: http://www.abstract.it/++theme++abstract.theme/theme/static/theme/img/online/logo.png
+.. image:: http://www.abstract.it/logo-abstract-readme
    :alt: Abstract Website
    :target: http://www.abstract.it
 
