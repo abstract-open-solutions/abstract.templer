@@ -1,10 +1,21 @@
 .. contents::
 
 
-Introduction
+This package contains a Plone theme and it includes:
+
+* *interfaces.IThemeSpecific* browser layer useful to override view, viewlets etc.
+* *static* folder useful to include static resources
+* *template_overrides* folder where include `z3c.jbot`_ templates
+
+
+Dependencies
 ============
 
-This package contains a Plone theme based on `plone.app.theming`__.
+* `Plone`_
+* `z3c.jbot`_
+* `plone.app.theming`_
 
 
-__ http://pypi.python.org/pypi/plone.app.theming
+.. _Plone: http://www.plone.org
+.. _z3c.jbot: http://pypi.python.org/pypi/z3c.jbot
+.. _plone.app.theming: http://pypi.python.org/pypi/plone.app.theming
