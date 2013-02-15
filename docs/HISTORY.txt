@@ -3,7 +3,7 @@ Changelog
 
 1.0dev (unreleased)
 -------------------
-
+- removed theme.xml from plonetheme profile [gborelli]
 - cleanup, update docs and README [simahawk]
 - update theme template structure according to $buildout_dir/resources approach [simahawk]
 - added loadcontent local command to plonepolicy template
@@ -16,6 +16,6 @@ Changelog
 - changed plone version in templates buildout
 - renamed package to abstract.templer
 - added plonetheme template
-- added plonepolicy template 
+- added plonepolicy template
 
 [gborelli]
